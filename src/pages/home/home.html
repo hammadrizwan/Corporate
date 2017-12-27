@@ -1,14 +1,72 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Drive and Deliver</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="background1">
+  <ion-card (click)="openPackageDetailsPage()">
+
+    <img src="assets/imgs/advance-card-map-madison.png">
+    <ion-fab right top>
+      <button class="buttoncolor" ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab>
+
+    <ion-item>
+      <ion-icon class="ioniconcolor1" name="pin" item-start large></ion-icon>
+      <h2>To: Museum of Football</h2>
+      <p>11 N. Way St, Madison, WI 53703</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon class="ioniconcolor1" name="radio-button-off" item-left large></ion-icon>
+      <h2>From: Institute of Fine Cocktails</h2>
+      <p>14 S. Hop Avenue, Madison, WI 53703</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon class="ioniconcolor1" name="ios-open" item-left large></ion-icon>
+      <h2>Package Size</h2>
+      <p>Small</p>
+    </ion-item>
+
+    <button ion-button full class="buttonitem ">
+      Accept
+    </button>
+
+
+  </ion-card>
+  <ion-card (click)="openPackageDetailsPage()">
+
+    <img src="assets/imgs/advance-card-map-madison.png">
+    <ion-fab right top>
+      <button class="buttoncolor" ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab>
+
+    <ion-item>
+      <ion-icon class="ioniconcolor1" name="pin" item-start large></ion-icon>
+      <h2>To: Museum of Football</h2>
+      <p>11 N. Way St, Madison, WI 53703</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon class="ioniconcolor1" name="radio-button-off" item-left large></ion-icon>
+      <h2>From: Institute of Fine Cocktails</h2>
+      <p>14 S. Hop Avenue, Madison, WI 53703</p>
+    </ion-item>
+    <ion-item>
+      <ion-icon class="ioniconcolor1" name="ios-open" item-left large></ion-icon>
+      <h2>Package Size</h2>
+      <p>Small</p>
+    </ion-item>
+    <button ion-button full class="buttonitem ">
+      Accept
+    </button>
+  </ion-card>
 </ion-content>
